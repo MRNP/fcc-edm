@@ -45,8 +45,12 @@ namespace utils {
 
 }
 
-std::ostream& operator<<(std::ostream& out, const std::vector<fcc::BareParticle>& ptc);
-std::ostream& operator<<(std::ostream& out, const std::vector<fcc::Particle>& ptc);
-std::ostream& operator<<(std::ostream& out, const std::vector<fcc::MCParticle>& ptc);
+//std::ostream& operator<<(std::ostream& out, const std::vector<fcc::BareParticle>& ptc);
+//std::ostream& operator<<(std::ostream& out, const std::vector<fcc::Particle>& ptc);
+//std::ostream& operator<<(std::ostream& out, const std::vector<fcc::MCParticle>& ptc);
+
+std::string to_string(const fcc::BareParticle& ptc);
+std::string to_string(const fcc::Particle& ptc);
+std::string to_string(const fcc::MCParticle& ptc);
 
 #endif
